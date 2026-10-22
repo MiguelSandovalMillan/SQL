@@ -260,7 +260,7 @@ WHERE salary > (                WHERE (department, salary) = (              SELE
 ---                               _'UNION'_                                    --
 
 
-" INNER JOIN " Devuelve solo las filas que tienen coincidencias en ambas tablas 
+" INNER JOIN o JOIN" Devuelve solo las filas que tienen coincidencias en ambas tablas 
 _                (SELECT * FROM table1 INNER JOIN table2 ON table1.id = table2.id;)
 
 
@@ -270,7 +270,7 @@ SELECT table1.col1, table2.col2, ...
 FROM table1, (SELECT * FROM table) AS table2
 WHERE table1.id = table2.id
 
-
+" LEFT JOIN " 
 
 " UNION " Combina los resultados de dos o más consultas SELECT en un solo conjunto de resultados (eliminando duplicados por defecto)  --> Columnas       
 _           (SELECT col1, col2 FROM table1) UNION (SELECT col1, col2 FROM table2);
