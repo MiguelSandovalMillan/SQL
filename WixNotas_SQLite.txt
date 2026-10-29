@@ -75,7 +75,7 @@ CHECK --> BOOLEANO        BOOL --> BOOLEANO       (0 = FALSO, 1 = VERDADERO)
 --                                   _'CONSULTAS'_                                           --
 " SELECT "  se utiliza para seleccionar datos de una tabla (SELECT coin FROM sales;)
 
-" FROM "  se utiliza para seleccionar de que tabla queremos recibir los datos (SELECT coin FROM sales;)
+" FROM "  se utiliza para seleccionar        de que tabla queremos recibir los datos (SELECT coin FROM sales;)
 
 El simbolo  " * "  nos sirve para seleccionar todas las columnas de una tabla   (SELECT * FROM sales;)
 
@@ -110,11 +110,11 @@ Eliminar tablas " DROP TABLE "    (DROP TABLE sales;)
 
 
             EJEMPLO
-SELECT price + 10 as increased_price,
-    price - 10 as reduced_price,
-    price * 10 as multiple_price,
-    price / 2 as half_price
-FROM products;
+    SELECT price + 10 as increased_price,
+        price - 10 as reduced_price,
+        price * 10 as multiple_price,
+        price / 2 as half_price
+    FROM products;
 
 
 
@@ -174,7 +174,7 @@ FROM products;
 %w: Día de la semana (0-6, el domingo es 0)
 
 %H: Hora (00-23)
-%M: Minuto (00-59)
+%M: Minuto (00-59)      
 %S: Segundo (00-59)
 
 
